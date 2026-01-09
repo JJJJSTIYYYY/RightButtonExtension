@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct RightButtonExtensionApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self)
+    var appDelegate
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView() // 无 UI App
         }
     }
 }
